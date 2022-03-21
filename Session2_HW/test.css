@@ -1,0 +1,109 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.fr{
+    background-color: #ffffff;
+    display: flex;
+    
+}
+.status{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+}
+
+#username {
+    font-size:30px;
+}
+.time{
+    display: flex;
+}
+#user{
+    display: flex;
+    justify-content: center;
+    width: 375px;
+}
+#pro{
+    width: 77px;
+    height: 77px;
+    border-radius: 38.5px;
+}
+#profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left:10px;
+    width: 365px;
+    height: 85px;
+}
+#num{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    font-size:x-large;
+    position: relative;
+    left:-20px;
+}
+#post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+#name{
+    font-size: larger;
+}
+#intro{
+    left:30px;
+    position:relative;
+}
+#num5{
+    justify-content: center;
+    height: 25px;
+    display: flex;
+    border: solid 1px rgb(153, 159, 170);
+    border-radius: 4px;
+    width:355px;
+    position: relative;
+    left:8px;
+}
+#num4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    border: solid 1px rgb(153, 159, 170);
+    border-left: 5px;
+    border-right: 5px;
+}
+.pics{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#pics{
+    position: relative;
+    top: 60px;
+}
+#num3{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 60px;
+    align-items: center;
+}
+#bottombar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:60px;
+}
