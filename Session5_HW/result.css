@@ -1,0 +1,39 @@
+h2 {
+    font-size: 15px;
+    margin: auto;
+  }
+  
+  .text_input {
+    width: 600px;
+    color: black;
+  }
+  .text_input p {
+    border: 2px solid pink;
+    background-color: pink;
+    padding: 6px;
+  }
+  
+  .result {
+    width: 600px;
+    font-size: 15px;
+  }
+  
+  #result_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #content {
+    text-align: center;
+  }
+  
+  #content h1 {
+    font-weight: 400;
+  }
+  
+  #content p {
+    font-size: 25px;
+    color: pink;
+    margin: auto;
+  }
