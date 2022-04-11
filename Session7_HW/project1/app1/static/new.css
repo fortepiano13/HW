@@ -1,0 +1,45 @@
+body {
+    background-color:#f0efe9;
+    letter-spacing: -1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.duedate{
+    width: 300px;
+    height: 50px;
+    color: rgb(161, 161, 161);
+    letter-spacing: 1px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lagalbi{
+    margin-right: 10px;
+}
+
+.duedue{
+    width: 120px;
+}
+
+.titletext{
+    height: 40px;
+    width: 280px;
+    padding: 7px;
+    font-size: 22px;
+    margin : 15px;
+    margin-top: 15px;
+}
+
+.content{
+    box-sizing: border-box;
+    height: 160px;
+    width: 300px;
+    background-color:rgb(255, 255, 255);
+    padding: 7px;
+    font-size: 16px;
+    margin : 5px;
+}

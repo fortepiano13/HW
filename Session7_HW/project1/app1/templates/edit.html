@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'edit.css' %}" type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class=toll>
+            <div class ="new">
+                <div class="newpost">할일을 수정하십시오</div>
+            </div>
+            <div class="title">
+                <input type="text" id="title" name="title" value="{{ post.title }}" placeholder="일정을 입력해주세요">
+            </div>
+            <div class="content">
+                <textarea class="contenttext" name="content" cols="30" rows="10">{{post.content}}</textarea>
+            </div>
+            <div class="duedate">
+                <lagalbi class="lagalbi"> due date: </lagalbi>
+                <input class="duedue" type="date" name="duedate" placeholder="마감기한을 입력해주세요">
+            </div>
+            <div class="bottom">
+                <button class="button" type="submit">
+                <span class="material-icons" style="font-size: 20px; color:white;"> 
+                    수정하기
+                </span>
+                </button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
