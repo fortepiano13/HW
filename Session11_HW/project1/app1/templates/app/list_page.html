@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+
+  {% block css %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'app/list_page.css' %}">
+  {% endblock %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  {% block title %}
+  HOME!  
+  <title>게시글 목록</title>
+  {% endblock %}
+</head>
+
+{% block content %}
+<body>
+  <div class="page-wrapper">
+    <div class="page-container">
+      <header class="page-header">
+        <h2>개인 블로그</h2>
+      </header>
+
+      <div class="content-container">
+        <h3>목록</h3>
+
+        {% if not posts %}
+        <p class="if-no-post">지금은 아무것도 없네요..</p>
+        {% endif %}
+
+        {% for post in posts %}
+        <a class="post-title" href="{% url 'detail_page' post.pk %}">
+        {{ post.title }}
+        </a>
+        {% endfor %}
+      </div>
+      <br>
+      <a class="write-btn" href="{% url 'create_page' %}">글쓰기</a>
+      <br>
+    </div>
+  </div>
+  <li class="navbar_menu_item">
+    <a href="{% url 'signup'%}">회원가입</a>
+  </li>
+  <li class="navbar_menu_item">
+    <a href="{% url 'login'%}">로그인</a>
+  </li>
+  <li class="navbar_menu_item">
+    <a href="{% url 'logout'%}">로그아웃</a>
+  </li>
+</body>
+{% endblock content %}
+</html>
